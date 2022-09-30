@@ -28,115 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.name_textbox = new System.Windows.Forms.TextBox();
-            this.port_textbox = new System.Windows.Forms.TextBox();
-            this.ip_textbox = new System.Windows.Forms.TextBox();
-            this.Connect = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.SelectDirectoryGTA5 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Connect = new System.Windows.Forms.Button();
             this.SelectDirectory = new System.Windows.Forms.FolderBrowserDialog();
+            this.mainLabel = new System.Windows.Forms.Label();
             this.showDirectory = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 110);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Адрес";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 159);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Порт";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.showDirectory);
+            this.groupBox1.Controls.Add(this.Connect);
             this.groupBox1.Controls.Add(this.SelectDirectoryGTA5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.name_textbox);
-            this.groupBox1.Controls.Add(this.port_textbox);
-            this.groupBox1.Controls.Add(this.ip_textbox);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox1.Location = new System.Drawing.Point(12, 430);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(374, 268);
+            this.groupBox1.Size = new System.Drawing.Size(1011, 82);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры подключения";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 205);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Имя";
-            // 
-            // name_textbox
-            // 
-            this.name_textbox.Location = new System.Drawing.Point(86, 202);
-            this.name_textbox.Name = "name_textbox";
-            this.name_textbox.Size = new System.Drawing.Size(265, 26);
-            this.name_textbox.TabIndex = 5;
-            this.name_textbox.Text = "Player";
-            // 
-            // port_textbox
-            // 
-            this.port_textbox.Location = new System.Drawing.Point(86, 156);
-            this.port_textbox.Name = "port_textbox";
-            this.port_textbox.Size = new System.Drawing.Size(265, 26);
-            this.port_textbox.TabIndex = 4;
-            this.port_textbox.Text = "22005";
-            // 
-            // ip_textbox
-            // 
-            this.ip_textbox.Location = new System.Drawing.Point(86, 107);
-            this.ip_textbox.Name = "ip_textbox";
-            this.ip_textbox.Size = new System.Drawing.Size(265, 26);
-            this.ip_textbox.TabIndex = 3;
-            this.ip_textbox.Text = "127.0.0.1";
-            // 
-            // Connect
-            // 
-            this.Connect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Connect.Location = new System.Drawing.Point(218, 287);
-            this.Connect.Name = "Connect";
-            this.Connect.Size = new System.Drawing.Size(169, 39);
-            this.Connect.TabIndex = 3;
-            this.Connect.Text = "Подключиться";
-            this.Connect.UseVisualStyleBackColor = true;
-            this.Connect.Click += new System.EventHandler(this.Connect_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "GTA5";
-            // 
             // SelectDirectoryGTA5
             // 
             this.SelectDirectoryGTA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SelectDirectoryGTA5.Location = new System.Drawing.Point(86, 42);
+            this.SelectDirectoryGTA5.Location = new System.Drawing.Point(86, 20);
             this.SelectDirectoryGTA5.Name = "SelectDirectoryGTA5";
             this.SelectDirectoryGTA5.Size = new System.Drawing.Size(125, 27);
             this.SelectDirectoryGTA5.TabIndex = 7;
@@ -144,51 +73,130 @@
             this.SelectDirectoryGTA5.UseVisualStyleBackColor = true;
             this.SelectDirectoryGTA5.Click += new System.EventHandler(this.SelectDirectoryGTA5_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Game Of Squids", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "GTA5";
+            // 
+            // Connect
+            // 
+            this.Connect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(130)))), ((int)(((byte)(0)))));
+            this.Connect.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.Connect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(139)))), ((int)(((byte)(141)))));
+            this.Connect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(139)))), ((int)(((byte)(141)))));
+            this.Connect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Connect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Connect.Location = new System.Drawing.Point(836, 37);
+            this.Connect.Name = "Connect";
+            this.Connect.Size = new System.Drawing.Size(169, 39);
+            this.Connect.TabIndex = 3;
+            this.Connect.Text = "Подключиться";
+            this.Connect.UseVisualStyleBackColor = false;
+            this.Connect.Click += new System.EventHandler(this.Connect_Click);
+            // 
             // SelectDirectory
             // 
             this.SelectDirectory.SelectedPath = "D:\\Program Files\\Rockstar Games\\Grand Theft Auto V";
             // 
+            // mainLabel
+            // 
+            this.mainLabel.AutoSize = true;
+            this.mainLabel.Font = new System.Drawing.Font("Game Of Squids", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.mainLabel.Location = new System.Drawing.Point(3, 4);
+            this.mainLabel.Name = "mainLabel";
+            this.mainLabel.Size = new System.Drawing.Size(126, 33);
+            this.mainLabel.TabIndex = 3;
+            this.mainLabel.Text = "capital";
+            // 
             // showDirectory
             // 
             this.showDirectory.AutoSize = true;
-            this.showDirectory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.showDirectory.Location = new System.Drawing.Point(19, 78);
+            this.showDirectory.Location = new System.Drawing.Point(18, 46);
             this.showDirectory.Name = "showDirectory";
-            this.showDirectory.Size = new System.Drawing.Size(0, 15);
+            this.showDirectory.Size = new System.Drawing.Size(0, 20);
             this.showDirectory.TabIndex = 8;
+            // 
+            // closeButton
+            // 
+            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(130)))), ((int)(((byte)(0)))));
+            this.closeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.closeButton.Font = new System.Drawing.Font("Game Of Squids", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.closeButton.Location = new System.Drawing.Point(967, 6);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(63, 36);
+            this.closeButton.TabIndex = 4;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(12, 48);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1011, 376);
+            this.axWindowsMediaPlayer1.TabIndex = 5;
+            // 
+            // Logo
+            // 
+            this.Logo.Image = global::Launcher.Properties.Resources._2;
+            this.Logo.Location = new System.Drawing.Point(418, 135);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(200, 200);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 6;
+            this.Logo.TabStop = false;
+            this.Logo.Visible = false;
+            // 
+            // Timer
+            // 
+            this.Timer.Interval = 17000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(402, 334);
-            this.Controls.Add(this.Connect);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(26)))), ((int)(((byte)(71)))));
+            this.ClientSize = new System.Drawing.Size(1035, 524);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
+            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.mainLabel);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Controls.Add(this.Logo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "MainWindow";
             this.Text = "Launcher";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox name_textbox;
-        private System.Windows.Forms.TextBox port_textbox;
-        private System.Windows.Forms.TextBox ip_textbox;
         private System.Windows.Forms.Button Connect;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button SelectDirectoryGTA5;
         private System.Windows.Forms.FolderBrowserDialog SelectDirectory;
+        private System.Windows.Forms.Label mainLabel;
         private System.Windows.Forms.Label showDirectory;
+        private System.Windows.Forms.Button closeButton;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.PictureBox Logo;
+        private System.Windows.Forms.Timer Timer;
     }
 }
 

@@ -32,8 +32,12 @@ namespace Launcher
         public MainWindow()
         {
             InitializeComponent();
-
+            axWindowsMediaPlayer1.URL = "https://cdn.discordapp.com/attachments/966108021023461457/970299382262038618/logo.mp4?size=4096";
+            axWindowsMediaPlayer1.uiMode = "none";
+            axWindowsMediaPlayer1.settings.volume = (int)1;
+            Timer.Start();
             showDirectory.Text = SelectDirectory.SelectedPath;
+            
         }
 
         private void SelectDirectoryGTA5_Click(object sender, EventArgs e)
@@ -53,15 +57,14 @@ namespace Launcher
                 int error = (int)MessageBox.Show("Неверный путь к игре. Укажите в настройках правильный", "Ошибка запуска", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
 
-            ip = ip_textbox.Text;
-            port = port_textbox.Text;
-            name = name_textbox.Text;
+            ip = "capital-roleplay.ru";
+            port = "22005";
+            name = "Driver";
 
             Launch();
 
         }
 
-        
         private void Launch()
         {
             RegistryKey reg = Registry.CurrentUser.CreateSubKey("Software\\RAGE-MP");
@@ -140,7 +143,7 @@ namespace Launcher
                         reg.SetValue("launch.port", (object)port.ToString());
                         reg.SetValue("launch.password", (object)"");
                         reg.SetValue("launch.type", (object)"connect");
-                        reg.SetValue("rage-type", (object)"legacy");
+                        reg.SetValue("rage-type", (object)"stable");
                         ProcessStartInfo processStartInfo1 = new ProcessStartInfo();
                         processStartInfo1.Arguments = "--process-name GTA5.exe";
                         ProcessStartInfo processStartInfo2 = processStartInfo1;
@@ -154,7 +157,17 @@ namespace Launcher
                 }), (object)null, 0, -1);
             });
         }
-        
-        
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Hide();
+            Logo.Show();
+            Timer.Stop();
+        }
     }
 }

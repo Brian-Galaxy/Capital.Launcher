@@ -1,0 +1,24 @@
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\runtimes\win-x86\native\WebView2Loader.dll
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\runtimes\win-x64\native\WebView2Loader.dll
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\runtimes\win-arm64\native\WebView2Loader.dll
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Capital Launcher.exe.config
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Capital Launcher.exe
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Capital Launcher.pdb
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\AutoUpdater.NET.dll
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Microsoft.Web.WebView2.Core.dll
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Microsoft.Web.WebView2.WinForms.dll
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Microsoft.Web.WebView2.Wpf.dll
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\AutoUpdater.NET.pdb
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\AutoUpdater.NET.xml
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Microsoft.Web.WebView2.Core.xml
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Microsoft.Web.WebView2.WinForms.xml
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\bin\Release\Microsoft.Web.WebView2.Wpf.xml
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital Launcher.csproj.AssemblyReference.cache
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital Launcher.csproj.SuggestedBindingRedirects.cache
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital_Launcher.Selector.resources
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital_Launcher.Properties.Resources.resources
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital Launcher.csproj.GenerateResource.cache
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital Launcher.csproj.CoreCompileInputs.cache
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital Launcher.csproj.CopyComplete
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital Launcher.exe
+D:\OneDrive\Документы\CAPITAL\Launcher\Capital Launcher\obj\Release\Capital Launcher.pdb
