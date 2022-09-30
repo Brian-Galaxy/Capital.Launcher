@@ -15,7 +15,7 @@ namespace Capital_Launcher
         public Selector()
         {
             InitializeComponent();
-            AutoUpdater.Start("https://pastebin.com/raw/WRR00DxV.xml");
+            AutoUpdater.Start("https://pastebin.com/raw/0vm82kxe");
             verLbl.Text = "v." + Application.ProductVersion;
 
 

@@ -85,7 +85,7 @@
             // 
             this.verLbl.AutoSize = true;
             this.verLbl.Font = new System.Drawing.Font("GOST type A", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.verLbl.Location = new System.Drawing.Point(331, 459);
+            this.verLbl.Location = new System.Drawing.Point(390, 459);
             this.verLbl.Name = "verLbl";
             this.verLbl.Size = new System.Drawing.Size(55, 20);
             this.verLbl.TabIndex = 4;
